@@ -24,8 +24,8 @@ let package = Package(
         .binaryTarget(
               name: "FoodItem",
               url:
-                "https://github.com/dogahe/FoodItemBinary/releases/download/1.0.0/FoodItem.zip",
-              checksum: "53c38d1c9a19e34b76b0f26235e5fc0fb8e3ee6755627b43c27a31a71bf05201"),
+                "https://github.com/dogahe/Apple-Frameworks/releases/download/1.0.0/FoodItem.zip",
+              checksum: "7978321702d42ba9130dbeee577903eea8c6aa7b4ac23d517a8c8d496ea4ca63"),
         .testTarget(
             name: "FoodItemBinaryTests",
             dependencies: ["FoodItemBinary"]),
