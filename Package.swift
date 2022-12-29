@@ -18,12 +18,18 @@ let package = Package(
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
-        .binaryTarget(name: "FoodItem", path: "FoodItem.xcframework"),
         .target(
             name: "FoodItemBinary",
             dependencies: []),
+        .binaryTarget(
+              name: "FoodItem",
+              url:
+                "https://github.com/dogahe/FoodItemBinary/releases/download/1.0.0/FoodItem.xcframework.zip",
+              checksum: "53c38d1c9a19e34b76b0f26235e5fc0fb8e3ee6755627b43c27a31a71bf05201"),
         .testTarget(
             name: "FoodItemBinaryTests",
             dependencies: ["FoodItemBinary"]),
     ]
 )
+
+
