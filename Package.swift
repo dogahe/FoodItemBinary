@@ -24,7 +24,7 @@ let package = Package(
         .binaryTarget(
               name: "FoodItem",
               url:
-                "https://github.com/dogahe/FoodItemBinary/releases/download/1.0.0/FoodItem.xcframework.zip",
+                "https://github.com/dogahe/FoodItemBinary/releases/download/1.0.0/FoodItem.zip",
               checksum: "53c38d1c9a19e34b76b0f26235e5fc0fb8e3ee6755627b43c27a31a71bf05201"),
         .testTarget(
             name: "FoodItemBinaryTests",
